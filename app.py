@@ -3,7 +3,7 @@ import urllib.parse
 
 st.set_page_config(page_title="Liviza Prompt Generator", layout="wide")
 
-st.title("Liviza Prompt Generator")
+st.title("Liviza Prompt Generator (keukens)")
 
 st.sidebar.header("Stappenplan")
 st.sidebar.markdown(
@@ -71,7 +71,9 @@ fronten = onderdeel_blok("Fronten")
 corpus = onderdeel_blok("Corpus")
 werkblad = onderdeel_blok("Werkblad")
 handgrepen = onderdeel_blok("Handgrepen")
-extra_notes = st.text_area('Overige opmerkingen', placeholder="Typ hier overige opmerkingen...")
+
+st.subheader("Overig")
+extra_notes = st.text_area('Opmerkingen', placeholder="Typ hier overige opmerkingen...")
 
 st.header('Welke bestanden wil je uploaden?')
 input_types = {'Plattegrond': '', 'Tekening': '', 'Afbeelding': '', 'Transcript gesprek': ''}
